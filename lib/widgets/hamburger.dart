@@ -10,23 +10,22 @@ class Hamburger extends StatelessWidget {
   required this.color, 
   required this.route});
 
-
   @override
   Widget build(BuildContext context) {
     return IconButton(
       highlightColor: const Color.fromARGB(0, 255, 255, 255),
       splashColor: const Color.fromARGB(0, 255, 255, 255),
       onPressed: () {
-          Navigator.popAndPushNamed(context, route);
+        Navigator.popAndPushNamed(context, route);
       },
       icon: Container(
-          height: 11,
-          margin: const EdgeInsets.all(7),
-          child: Image.asset(
-            'assets/icons/hamburger.png',
-            color: color,
-            scale: 0.5,
-          )
+        height: 11,
+        margin: const EdgeInsets.all(7),
+        child: Image.asset(
+          'assets/icons/hamburger.png',
+          color: color,
+          scale: 0.5,
+        )
       ),
     );
   }

@@ -12,23 +12,23 @@ class Calendar extends StatelessWidget {
 
   });
 
-
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     return IconButton(
       highlightColor: const Color.fromARGB(0, 255, 255, 255),
       splashColor: const Color.fromARGB(0, 255, 255, 255),
       onPressed: () {
-                Navigator.pushNamed(context, route);
+        Navigator.pushNamed(context, route);
       },
       icon: Container(
-          height: 18,
-          margin: const EdgeInsets.all(7),
+          margin: EdgeInsets.all(size.height * 0.006),
           child: Image.asset(
             'assets/icons/calendar.png',
             color: color,
             scale: 0.5,
-          )
+        )
       ),
     );
   }

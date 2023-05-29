@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Paycapp',
       theme: AppTheme.lightTheme,
-      initialRoute: 'swiper',
+      initialRoute: 'payment',
       routes: {
         'swiper'  : ( _ ) => const HomeScreen(),
         'payment' : ( _ ) => const PaymentKeypad(), 

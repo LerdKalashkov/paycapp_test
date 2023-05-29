@@ -13,8 +13,6 @@ class Avatar extends StatelessWidget {
 
   });
 
-
-
   @override
   Widget build(BuildContext context) {
     return IconButton(
@@ -25,7 +23,7 @@ class Avatar extends StatelessWidget {
         Navigator.pushNamed(context, route);
       },
       icon: ClipRRect(
-         borderRadius: BorderRadius.all(Radius.circular(radius)),
+        borderRadius: BorderRadius.all(Radius.circular(radius)),
         child: Image.asset(
           'assets/photos/girl.png',
         ),
